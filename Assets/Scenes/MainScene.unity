@@ -248,8 +248,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uC774\uC5B4\uD558\uAE30"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b95673adef1ad4a45bfb94339bd1e346, type: 2}
-  m_sharedMaterial: {fileID: -5415374104309683224, guid: b95673adef1ad4a45bfb94339bd1e346, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cc142b3d5b519bf49ad6f61c1ac8d7aa, type: 2}
+  m_sharedMaterial: {fileID: 1989970819618089349, guid: cc142b3d5b519bf49ad6f61c1ac8d7aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -465,8 +465,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uAC8C\uC784 \uC885\uB8CC"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b95673adef1ad4a45bfb94339bd1e346, type: 2}
-  m_sharedMaterial: {fileID: -5415374104309683224, guid: b95673adef1ad4a45bfb94339bd1e346, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cc142b3d5b519bf49ad6f61c1ac8d7aa, type: 2}
+  m_sharedMaterial: {fileID: 1989970819618089349, guid: cc142b3d5b519bf49ad6f61c1ac8d7aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -554,7 +554,7 @@ GameObject:
   - component: {fileID: 773990561}
   - component: {fileID: 773990560}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Continue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -573,12 +573,12 @@ RectTransform:
   m_Children:
   - {fileID: 394498101}
   m_Father: {fileID: 1522891890}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 300, y: 120}
+  m_SizeDelta: {x: 600, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &773990560
 MonoBehaviour:
@@ -689,7 +689,7 @@ GameObject:
   - component: {fileID: 895062098}
   - component: {fileID: 895062097}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Slogun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -870,8 +870,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uC0C8 \uAC8C\uC784"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b95673adef1ad4a45bfb94339bd1e346, type: 2}
-  m_sharedMaterial: {fileID: -5415374104309683224, guid: b95673adef1ad4a45bfb94339bd1e346, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cc142b3d5b519bf49ad6f61c1ac8d7aa, type: 2}
+  m_sharedMaterial: {fileID: 1989970819618089349, guid: cc142b3d5b519bf49ad6f61c1ac8d7aa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -959,7 +959,7 @@ GameObject:
   - component: {fileID: 1283660098}
   - component: {fileID: 1283660097}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: New Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -983,7 +983,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 300, y: 120}
+  m_SizeDelta: {x: 600, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1283660097
 MonoBehaviour:
@@ -1094,7 +1094,7 @@ GameObject:
   - component: {fileID: 1362326903}
   - component: {fileID: 1362326902}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1228,7 +1228,7 @@ GameObject:
   - component: {fileID: 1367761395}
   - component: {fileID: 1367761394}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Junu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1383,8 +1383,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1283660096}
-  - {fileID: 2087557342}
   - {fileID: 773990559}
+  - {fileID: 2087557342}
   - {fileID: 1362326901}
   - {fileID: 1814963769}
   - {fileID: 1367761393}
@@ -1409,7 +1409,7 @@ GameObject:
   - component: {fileID: 1814963771}
   - component: {fileID: 1814963770}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Red Carpet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1486,7 +1486,7 @@ GameObject:
   - component: {fileID: 2087557344}
   - component: {fileID: 2087557343}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Game Out
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1505,12 +1505,12 @@ RectTransform:
   m_Children:
   - {fileID: 611247793}
   m_Father: {fileID: 1522891890}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -200}
-  m_SizeDelta: {x: 300, y: 120}
+  m_SizeDelta: {x: 600, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2087557343
 MonoBehaviour:
