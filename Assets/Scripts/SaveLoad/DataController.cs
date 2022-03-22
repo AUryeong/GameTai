@@ -43,7 +43,7 @@ public class DataController : MonoBehaviour
     
     public void LoadGameData() 
     {
-        string filePath = Application.persistentDataPath + GameDataFileName;
+        string filePath = Application.persistentDataPath + "\\" + GameDataFileName;
         
         if (File.Exists(filePath))
         { 
@@ -58,7 +58,7 @@ public class DataController : MonoBehaviour
     
     public void SaveGameData() 
     {
-        File.WriteAllText(Application.persistentDataPath + GameDataFileName, JsonUtility.ToJson(gameData));
+        File.WriteAllText(Application.persistentDataPath + "\\" + GameDataFileName, JsonUtility.ToJson(gameData));
     } 
     
     private void OnApplicationQuit()

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TitleButton : MonoBehaviour
 {
@@ -102,7 +103,9 @@ public class TitleButton : MonoBehaviour
         }
         else if (!noclick)
         {
+            DataController.Instance._gameData = new GameData();
             DataController.Instance.SaveGameData();
+            SceneManager.LoadScene("InGameScene");
         }
     }
     public void Continue()
@@ -121,14 +124,17 @@ public class TitleButton : MonoBehaviour
         DataController.Instance._gameData = new GameData();
         DataController.Instance.SaveGameData();
         DataController.Instance.LoadGameData();
+        SceneManager.LoadScene("InGameScene");
     }
     public void ContinueYes()
     {
         DataController.Instance.LoadGameData();
+        SceneManager.LoadScene("InGameScene");
     }
     public void GameOutYes()
     {
         DataController.Instance.SaveGameData();
         Application.Quit();
     }
+
 }

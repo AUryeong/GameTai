@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Serializable]
 public class Worker
 {
     public int health;
@@ -27,6 +29,7 @@ public class Worker
         return obj;
     }
 
+    [Serializable]
     public class Direct
     {
         public Genre genre;
