@@ -115,7 +115,6 @@ public class TitleButton : MonoBehaviour
         StartCoroutine(WindowOn(gameoutwindow, gameout));
     }
 
-    
 
     public void NewGameYes()
     {
