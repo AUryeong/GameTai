@@ -30,19 +30,23 @@ public class Worker
 
     public GameObject GetWorkerUnit()
     {
-        GameObject obj = GameObject.Find("Company").transform.Find(name).gameObject;
+        /*GameObject obj = GameManager.Instance.Company.GetComponent<CompanyRoom>().workers.Find((WorkerUnit x) => x.name == name).gameObject;
         if (obj == null)
         {
             obj = new GameObject(name, typeof(WorkerUnit));
             obj.GetComponent<WorkerUnit>().worker = this;
-            obj.transform.SetParent(GameObject.Find("Company").transform);
+            if(inroom == Room.Direct)
+            {
+                //obj.transform.SetParent();
+            }
         }
-        return obj;
+        return obj;*/
+        return null;
     }
     public enum Room
     {
-        Art,
-        Program,
+        Graphic,
+        Code,
         Direct,
         Rest
     }
