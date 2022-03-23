@@ -5,5 +5,4 @@ using UnityEngine;
 public class CompanyRoom : MonoBehaviour
 {
     public List<WorkerUnit> workers = new List<WorkerUnit>();
-    
 }

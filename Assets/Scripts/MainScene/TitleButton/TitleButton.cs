@@ -105,6 +105,7 @@ public class TitleButton : MonoBehaviour
         {
             DataController.Instance._gameData = new GameData();
             DataController.Instance.SaveGameData();
+            DataController.Instance.LoadGameData();
             SceneManager.LoadScene("InGameScene");
         }
     }
@@ -128,7 +129,6 @@ public class TitleButton : MonoBehaviour
     }
     public void ContinueYes()
     {
-        DataController.Instance.LoadGameData();
         SceneManager.LoadScene("InGameScene");
     }
     public void GameOutYes()
