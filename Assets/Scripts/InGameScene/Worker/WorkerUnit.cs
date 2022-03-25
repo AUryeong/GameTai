@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using System;
 
 public enum Rank
@@ -94,6 +95,8 @@ public class WorkerUnit : MonoBehaviour
     private SpriteRenderer Hair;
     [SerializeField]
     private SpriteRenderer Clothes;
+    [SerializeField]
+    private TextMeshPro tmp;
 
     public float speed;
     public float final;
@@ -103,6 +106,7 @@ public class WorkerUnit : MonoBehaviour
         this.worker = worker;
         Hair.color = worker.haircolor;
         Clothes.color = worker.clothescolor;
+        tmp.text = worker.name;
     }
     
     void Update()
