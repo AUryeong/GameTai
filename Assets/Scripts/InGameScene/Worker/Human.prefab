@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7933544786664632511}
   - component: {fileID: 5823307990890317444}
   - component: {fileID: 1471246226293815647}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +181,8 @@ GameObject:
   - component: {fileID: 8529968428767275472}
   - component: {fileID: 8529968428767275474}
   - component: {fileID: 8529968428767275475}
-  m_Layer: 0
+  - component: {fileID: 4197169456908626548}
+  m_Layer: 9
   m_Name: Human
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,6 +287,32 @@ MonoBehaviour:
   speed: 0
   final: 0
   cooltime: 0
+--- !u!61 &4197169456908626548
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8529968428767275473}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.2684056}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.5368104}
+  m_EdgeRadius: 0
 --- !u!1 &8529968428838136012
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,7 +323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8529968428838136015}
   - component: {fileID: 8529968428838136014}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -378,7 +405,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8529968429990063281}
   - component: {fileID: 8529968429990063280}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Clothes
   m_TagString: Untagged
   m_Icon: {fileID: 0}

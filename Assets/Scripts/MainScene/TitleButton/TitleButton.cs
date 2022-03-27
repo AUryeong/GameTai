@@ -104,7 +104,7 @@ public class TitleButton : MonoBehaviour
         else if (!noclick)
         {
             DataController.Instance._gameData = new GameData();
-            DataController.Instance.SaveGameData();
+            DataController.Instance.SaveGameData2();
             DataController.Instance.LoadGameData();
             SceneManager.LoadScene("InGameScene");
         }
@@ -123,7 +123,7 @@ public class TitleButton : MonoBehaviour
     public void NewGameYes()
     {
         DataController.Instance._gameData = new GameData();
-        DataController.Instance.SaveGameData();
+        DataController.Instance.SaveGameData2();
         DataController.Instance.LoadGameData();
         SceneManager.LoadScene("InGameScene");
     }
@@ -133,7 +133,6 @@ public class TitleButton : MonoBehaviour
     }
     public void GameOutYes()
     {
-        DataController.Instance.SaveGameData();
         Application.Quit();
     }
 

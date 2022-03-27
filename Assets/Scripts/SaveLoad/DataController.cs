@@ -29,7 +29,6 @@ public class DataController : MonoBehaviour
             if(_gameData == null)
             { 
                 LoadGameData(); 
-                SaveGameData();
             }
             return _gameData;
         }
@@ -38,7 +37,6 @@ public class DataController : MonoBehaviour
     private void Start() 
     {
         LoadGameData(); 
-        SaveGameData();
     } 
     
     public void LoadGameData() 
@@ -56,11 +54,25 @@ public class DataController : MonoBehaviour
         } 
     } 
     
-    public void SaveGameData() 
+    public void SaveGameData()
     {
+        this.gameData.workers = new List<Worker>();
+        foreach (CompanyRoom room in GameManager.Instance.Companys)
+        {
+            foreach (WorkerUnit workerUnit in room.workers)
+            {
+                this.gameData.workers.Add(workerUnit.worker);
+            }
+        }
         File.WriteAllText(Application.persistentDataPath + "\\" + GameDataFileName, JsonUtility.ToJson(gameData));
-    } 
+    }
     
+    public void SaveGameData2()
+    {
+        this.gameData.workers = new List<Worker>();
+        File.WriteAllText(Application.persistentDataPath + "\\" + GameDataFileName, JsonUtility.ToJson(gameData));
+    }
+
     private void OnApplicationQuit()
     { 
         SaveGameData(); 

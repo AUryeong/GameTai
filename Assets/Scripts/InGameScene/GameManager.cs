@@ -5,16 +5,19 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    public List<Transform> Companys = new List<Transform>();
+    public List<CompanyRoom> Companys = new List<CompanyRoom>();
     public WorkerUnit prefab;
+    public RightUIButton rightUI;
+    public LeftUIButton leftUI;
 
     void Start()
     {
-        foreach(Worker worker in DataController.Instance.gameData.workers)
+        foreach (Worker worker in DataController.Instance.gameData.workers)
         {
             worker.AddWorkerUnit();
         }
     }
+
 }
     
 
