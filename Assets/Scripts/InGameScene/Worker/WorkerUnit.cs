@@ -219,7 +219,7 @@ public class WorkerUnit : MonoBehaviour, IPointerDownHandler, IPointerClickHandl
         {
             if (cooltime <= 0)
             {
-                speed = UnityEngine.Random.Range(5, 31) / 30000f;
+                speed = UnityEngine.Random.Range(11, 31) / 30000f;
                 final = UnityEngine.Random.Range(-70300, 70301) / 10000f;
                 cooltime = UnityEngine.Random.Range(20, 66) / 10f;
             }

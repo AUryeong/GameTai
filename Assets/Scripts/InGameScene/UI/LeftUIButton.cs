@@ -20,14 +20,14 @@ public class LeftUIButton : MonoBehaviour
     private GameObject workeraddwindow;
 
     [SerializeField]
+    private GameObject gamelistwindow;
+
+    [SerializeField]
     private GameObject leftuiwindow;
 
     private bool noclick = false;
     private bool opened = false;
 
-    private void Awake()
-    {
-    }
 
     public void OpenorClose()
     {
@@ -48,24 +48,24 @@ public class LeftUIButton : MonoBehaviour
 
     IEnumerator Open()
     {
-        leftuiwindow.GetComponent<RectTransform>().localPosition = new Vector3(-1183, -200, 0);
+        leftuiwindow.GetComponent<RectTransform>().localPosition = new Vector3(-1183, -100, 0);
         while (Mathf.Abs(leftuiwindow.GetComponent<RectTransform>().localPosition.x) - 730f > 0.2f)
         {
-            leftuiwindow.GetComponent<RectTransform>().localPosition = Vector3.Lerp(leftuiwindow.GetComponent<RectTransform>().localPosition, new Vector3(-730, -200, 0), Time.deltaTime * 12);
+            leftuiwindow.GetComponent<RectTransform>().localPosition = Vector3.Lerp(leftuiwindow.GetComponent<RectTransform>().localPosition, new Vector3(-730, -100, 0), Time.deltaTime * 12);
             yield return new WaitForFixedUpdate();
         }
-        leftuiwindow.GetComponent<RectTransform>().localPosition = new Vector3(-730, -200, 0);
+        leftuiwindow.GetComponent<RectTransform>().localPosition = new Vector3(-730, -100, 0);
         noclick = false;
     }
     IEnumerator Close()
     {
-        leftuiwindow.GetComponent<RectTransform>().localPosition = new Vector3(-730, -200, 0);
+        leftuiwindow.GetComponent<RectTransform>().localPosition = new Vector3(-730, -100, 0);
         while (Mathf.Abs(leftuiwindow.GetComponent<RectTransform>().localPosition.x) - 1183f < -0.2f)
         {
-            leftuiwindow.GetComponent<RectTransform>().localPosition = Vector3.Lerp(leftuiwindow.GetComponent<RectTransform>().localPosition, new Vector3(-1183, -200, 0), Time.deltaTime * 12);
+            leftuiwindow.GetComponent<RectTransform>().localPosition = Vector3.Lerp(leftuiwindow.GetComponent<RectTransform>().localPosition, new Vector3(-1183, -100, 0), Time.deltaTime * 12);
             yield return new WaitForFixedUpdate();
         }
-        leftuiwindow.GetComponent<RectTransform>().localPosition = new Vector3(-1183, -200, 0);
+        leftuiwindow.GetComponent<RectTransform>().localPosition = new Vector3(-1183, -100, 0);
         noclick = false;
     }
 

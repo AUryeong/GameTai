@@ -6,19 +6,7 @@ using UnityEngine;
 public class RightUIButton : MonoBehaviour
 {
     [SerializeField]
-    private GameObject workerwindow;
-    [SerializeField]
-    private TextMeshProUGUI workername;
-    [SerializeField]
-    private TextMeshProUGUI workerhealth;
-    [SerializeField]
-    private TextMeshProUGUI workerbreak;
-    [SerializeField]
-    private TextMeshProUGUI workerprog;
-    [SerializeField]
-    private TextMeshProUGUI workerart;
-    [SerializeField]
-    private TextMeshProUGUI workerdirect;
+    WorkerSlot slot;    
 
     private WorkerUnit targetUnit;
 
@@ -28,7 +16,7 @@ public class RightUIButton : MonoBehaviour
     {
         if (!noclick)
         {
-            StartCoroutine(WindowOff(workerwindow, targetUnit.gameObject));
+            StartCoroutine(WindowOff(slot.gameObject, targetUnit.gameObject));
         }
     }
 
@@ -75,22 +63,8 @@ public class RightUIButton : MonoBehaviour
     }
     public void Targeting(WorkerUnit targetunit)
     {
-        targetUnit = targetunit;
-        StartCoroutine(WindowOn(workerwindow, targetunit.gameObject));
-        Worker target = targetunit.worker;
-        if(target != null)
-        {
-            workername.text = target.name;
-            workerhealth.text = "체력 : " + target.health + " / " + target.maxhelath;
-            workerbreak.text = "정신력 : " + target.mental + " / " + target.maxmental;
-            workerprog.text = "프로그래밍 : " + target.programing;
-            workerart.text = "미적 감각 : " + target.art;
-            string s = "";
-            foreach (Worker.Direct direct in target.directable)
-            {
-                s += Worker.Direct.GenreList[(int)direct.genre] + " (" + direct.rank + ")\n";
-            }
-            workerdirect.text = s;
-        }
+        slot.Targeting(targetunit);
+        this.targetUnit = targetunit;
+        StartCoroutine(WindowOn(slot.gameObject, targetunit.gameObject));
     }
 }

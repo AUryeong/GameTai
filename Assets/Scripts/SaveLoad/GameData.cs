@@ -10,5 +10,8 @@ public class GameData
     public bool cleartutorial = false;
     public string name = "±è¹ÎÂù";
     public List<Worker> workers = new List<Worker>();
-    public int workergoyu;
+    public int money;
+    public int month;
+    public int year;
+    public int makepercent;
 }
